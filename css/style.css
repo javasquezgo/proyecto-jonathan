@@ -10,13 +10,12 @@
     font-weight: 600;
 }
 
-.header {
+.header nav{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 75px;
+    padding: 30px 0px;
     font-family: 'Rubik', sans-serif;
-    border: 1px solid black;
 }
 
 .header figure{
@@ -44,18 +43,54 @@
 .header .sign{
     display: flex;
     align-items: center;
+
 }
 
-.header a{
+.header .sign a{
     text-decoration: none;
-    color: rgba(11, 19, 42, 1);
 }
 
-.header button{
-    margin-left: 30px;
-    padding: 13px 45px;
-    background: none;
+.header .sign .in{
+    padding-right: 20px;
+    color: #0B132A;
+}
+
+.header .sign .up{
+    color: #F53855;
     border: 1px solid #F53855;
     border-radius: 50px;
-    color: rgba(245, 56, 85, 1);
+    padding: 13px 45px;
+}
+
+.header-info{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info .add{
+    border: 1px solid black;    
+}
+
+.header-info .add .quote{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: #0B132A;
+}
+
+.header-info .add .quote strong{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    line-height: 70px;
+}
+
+.header-info .add .advertise{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: #4f5665;
 }
