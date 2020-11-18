@@ -63,34 +63,65 @@
 }
 
 .header-info{
-    border: 1px solid black;
+    margin-top: 70px;
     display: flex;
-    justify-content: space-between;
-}
-
-.header-info .add{
-    border: 1px solid black;    
+    justify-content: space-around;
 }
 
 .header-info .add .quote{
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
-    font-weight: 500;
-    font-family: 'Rubik', sans-serif;
+    line-height: 70px;
     color: #0B132A;
+    margin-top: 15px;
 }
 
-.header-info .add .quote strong{
-    font-size: 50px;
+.header-info .add strong{
     font-weight: 700;
-    font-family: 'Rubik', sans-serif;
-    line-height: 70px;
 }
 
 .header-info .add .advertise{
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
     line-height: 30px;
-    color: #4f5665;
+    color: #4F5665;
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+
+.header-info .add a{
+    text-decoration: none;
+    padding: 17px 75px;
+    background-color: #F53838;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.header-info .draw figure{
+    width: 612px;
+}
+
+.header .rectangle{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .rectangle .users{
+    display: flex;
+    align-items: center;
+}
+
+.header .rectangle .material-icons{
+    color: #FFECEC;
+    font-size: 40px;
+    background-color: #F53838;
+    margin-right: 20px;
+    border-radius: 80px;
 }
