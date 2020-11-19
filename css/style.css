@@ -130,6 +130,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+    margin-bottom: 90px;
 }
 
 .advantages .draw figure{
@@ -162,11 +163,120 @@
 
 .plan{
     background-color: #E5E5E5;
-    display: flex;
-    justify-content: space-between;
+}
+
+.plan .message{
+    width: 50%;
+    margin: 0px auto 0px auto;
+    text-align: center;
 }
 
 .plan .message h3{
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 70px;
+    font-size: 35px;
+    color: #0B132A;
+    margin-bottom: 20px;
 }
+
+.plan .message p{
+    font-size: 16px;
+    color: #4F5665;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.plan .promos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan .promos .promo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #dddddd;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 330px;
+    height: 760px;
+    text-transform: capitalize;
+}
+
+.plan .promos .promo1 figure{
+    padding-top: 70px;
+}
+
+.promos p{
+    font-weight: 500;
+    font-size: 30px;
+    color: #0B132A;
+    padding-top: 35px;
+}
+
+.promos .promo1 ol{
+    padding-top: 40px;
+    padding-left: 28px;
+    line-height: 40px;
+    list-style: url("../images/vector.png");
+}
+
+.promos .promo1 .price{
+    font-size: 25px;
+    padding-top: 160px;
+}
+
+.promos .promo1 .price1{
+    font-size: 25px;
+    padding-top: 120px;
+}
+
+.promos a{
+    padding-top: 33px;
+    text-decoration: none;
+    color: #F53838;
+    background: #FFF;
+    border: 2px solid #F53838;
+    padding: 10px 62px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.plan .promos .promoP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #F53838;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 330px;
+    height: 760px;
+    text-transform: capitalize;
+}
+
+.plan .promos .promoP figure{
+    padding-top: 70px;
+}
+
+.plan .promos .promoP ol{
+    padding-top: 40px;
+    padding-left: 28px;
+    line-height: 40px;
+    list-style: url("../images/vector.png");
+}
+
+.plan .promos .promoP .price{
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 80px;
+}
+
+.plan .promos .promoP a{
+    padding-top: 33px;
+    text-decoration: none;
+    color: #FFF;
+    background: #F53838;
+    padding: 10px 62px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
