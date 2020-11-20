@@ -66,6 +66,7 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 103px;
 }
 
 .header-info .add .quote{
@@ -74,7 +75,7 @@
     font-size: 50px;
     line-height: 70px;
     color: #0B132A;
-    margin-top: 15px;
+    margin: 0;
 }
 
 .header-info .add strong{
@@ -88,7 +89,7 @@
     line-height: 30px;
     color: #4F5665;
     margin-top: 20px;
-    padding-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .header-info .add a{
@@ -126,6 +127,10 @@
     border-radius: 80px;
 }
 
+.rectangle .position p{
+    margin: 0;
+}
+
 .header .advantages{
     display: flex;
     justify-content: space-around;
@@ -139,7 +144,9 @@
 
 .advantages .offer{
     text-transform: capitalize;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
     font-weight: 500;
     font-size: 35px;
     line-height: 50px;
@@ -147,6 +154,7 @@
 
 .advantages .resume{
     margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -155,6 +163,7 @@
 
 .advantages ul{
     list-style: url("../images/check_green.svg");
+    margin-left: 25px;
 }
 
 .advantages li{
@@ -211,6 +220,7 @@
     font-size: 30px;
     color: #0B132A;
     padding-top: 35px;
+    margin: 0;
 }
 
 .promos .promo1 ol{
@@ -314,6 +324,11 @@ p{
     text-align: center;
 }
 
+.customer .square-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .customer .customer-square{
     border: 2px solid #F53838;
     border-radius: 10px;
@@ -353,5 +368,131 @@ p{
 .customer-square .part-B p{
     font-size: 16px;
     line-height: 30px;
+    margin: 0 10px 0 auto;
+    text-align: left;
+}
+
+.customer .square-container .customer-square1{
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+}
+
+.customer .customer-square1 .part-A{
+    height: 50%;
+    display: flex;
+}
+
+.customer-square1 img{
+    height: 50px;
+    border-radius: 50px;
+    margin: 30px 10px 0 30px;
+}
+
+.customer-square1 p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #0B132A;
     margin: 0;
+    padding: 30px 0 0 0;
+    text-align: left;
+}
+
+.customer-square1 .part-A .opinion{
+    margin: 0;
+    padding: 40px 0px 0px 110px ;
+    text-align: right;
+}
+
+.customer-square1 .part-B {
+    height: 50%;
+} 
+
+.customer-square1 .part-B p{
+    font-size: 16px;
+    padding: 0 0 0 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.suscribe-square{
+    height: 233px;
+    width: 1140px;
+    margin: 185px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.suscribe-square .suscribe-square-script{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.suscribe-square .suscribe-square-script strong{
+    color: #0B132A;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+}
+
+.suscribe-square .suscribe-square-script small{
+    color: #4F5665;
+    font-size: 16px;
+}
+
+.suscribe-square .suscribe-square-boton{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 17.5px 65px;
+    background-color: #F53838;
+    border-radius: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 563px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .footer-information__img{
+    width: 104px;
+}
+
+.footer .footer-information__p{
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+}
+
+.footer .footer-information__social{
+    height: 33px;
+}
+
+.footer .footer-information__copyright{
+    color: #AFB5C0;
+    font-size: 16px;
+}
+
+.footer .footer-product__strong{
+    color: #0B132A;
+    font-size: 18px;
+}
+
+.footer .footer-product__ol{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.footer .footer-product__li{
+    font-size: 16px;
+    color: #4F5665;
+    line-height: 30px;
+    text-transform: capitalize;
 }
