@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -14,19 +15,20 @@
     <header class="header">
 
         <nav>
-            <figure>
+            <figure data-aos="fade-up" data-aos-duration="1000">
                 <img class="image-logo" src="./images/logo.png" alt="Logo">
             </figure>
-
-            <ol>
+            <!-- TODO: Cambiar ol por ul -->
+            <!-- TODO: Anclas en los li -->
+            <ol data-aos="fade-up" data-aos-duration="2000">
                 <li>About</li>
                 <li>Features</li>
                 <li>Pricing</li>
                 <li>Testimonials</li>
                 <li>Help</li>
             </ol>
-
-            <div class="sign">
+            <!-- TODO: margen entre anclas -->
+            <div class="sign" data-aos="fade-up" data-aos-duration="3000">
                 <a href="#" class="in"><span class="bold in">Sign in</span></a>
                 <a href="#" class="up"><span class="bold">Sign up</span></a>
             </div>
@@ -35,18 +37,19 @@
 
         <div class="header-info">
 
-            <div class="add">
-                <p class="quote">Want anything to be<br>
+            <div class="add" data-aos="fade-right">
+                <!-- TODO: cambiar p por h1 -->
+                <p id="titleChanging" class="quote">Want anything to be<br>
                     easy with <b>LaslesVPN</b></p>
 
                 <p class="advertise">Provide a network for all your needs with ease and fun using
                     <strong>LaslesVPN</strong> <br>
                     discover interesting features from us.</p>
 
-                <a href="#"><span>Get Started</span></a>
+                <a href="#" class="header__button"><span>Get Started</span></a>
 
             </div>
-            <div class="draw">
+            <div class="draw" data-aos="fade-left">
                 <figure>
                     <img src="./images/illustration1.png" alt="imagen de fondo">
                 </figure>
@@ -55,22 +58,28 @@
 
         <div class="rectangle">
             <div class="position">
-                <span class="material-icons">
-                    account_circle
-                </span>
+                <div class="rectangle__icons">
+                    <span class="material-icons">
+                        record_voice_over
+                    </span>
+                </div>
                 <p><strong>90+</strong><br>Users</p>
 
             </div>
             <div class="position">
-                <span class="material-icons">
-                    location_on
-                </span>
+                <div class="rectangle__icons">
+                    <span class="material-icons">
+                        location_on
+                    </span>
+                </div>
                 <p><strong>30+</strong><br>Location</p>
             </div>
             <div class="position">
-                <span class="material-icons">
-                    dns
-                </span>
+                <div class="rectangle__icons">
+                    <span class="material-icons">
+                        dns
+                    </span>
+                </div>
                 <p><strong>50+</strong><br>Server</p>
             </div>
         </div>
@@ -97,118 +106,131 @@
     </header>
 
     <section class="plan">
-        <div class="message">
-            <h3>Choose your plan</h3>
-            <p>Let's choose the package that is best for you and explore it happily and <br>cheerfully.</p>
+        <div class="plan-message">
+            <h3 class="plan-message__h3">Choose your plan</h3>
+            <p class="plan-message__p">Let's choose the package that is best for you and explore it happily and
+                <br>cheerfully.</p>
         </div>
 
-        <div class="promos">
-            <div class="promo1">
-                <figure>
+        <div class="promo">
+            <div class="promo-option">
+                <figure class="promo-option__figure">
                     <img src="./images/box.png" alt="Caja de promo">
                 </figure>
-                <p>free plan</p>
-                <ol>
-                    <li>unlimited bandwitch</li>
-                    <li>encrypted connection</li>
-                    <li>no traffics log</li>
-                    <li>works on all devices</li>
+                <p class="promo-option__p">free plan</p>
+                <ol class="promo-option__ol">
+                    <li class="promo-option__li">unlimited bandwitch</li>
+                    <li class="promo-option__li">encrypted connection</li>
+                    <li class="promo-option__li">no traffics log</li>
+                    <li class="promo-option__li">works on all devices</li>
                 </ol>
-                <p class="price">free</p>
-                <a href="#"><span>Select</span></a>
+                <p class="promo-option__p-price">Free</p>
+                <a class="promo-option__a" href="#"><span>Select</span></a>
             </div>
-            <div class="promo1">
-                <figure>
+
+            <div class="promo-option">
+                <figure class="promo-option__figure">
                     <img src="./images/box.png" alt="Caja de promo">
                 </figure>
-                <p>standard plan</p>
-                <ol>
-                    <li>unlimited bandwitch</li>
-                    <li>encrypted connection</li>
-                    <li>yes traffics log</li>
-                    <li>works on all devices</li>
-                    <li>connect anyware</li>
+                <p class="promo-option__p">standar plan</p>
+                <ol class="promo-option__ol">
+                    <li class="promo-option__li">unlimited bandwitch</li>
+                    <li class="promo-option__li">encrypted connection</li>
+                    <li class="promo-option__li">no traffics log</li>
+                    <li class="promo-option__li">works on all devices</li>
+                    <li class="promo-option__li">Connect Anywhere</li>
                 </ol>
-                <p class="price1">9 /mo</p>
-                <a href="#"><span>Select</span></a>
+                <p class="promo-option__p-price">$9<small class="promo-option__small">/ mo</small></p>
+                <a class="promo-option__a" href="#"><span>Select</span></a>
             </div>
-            <div class="promoP">
-                <figure>
+
+            <div class="promo-option">
+                <figure class="promo-option__figure">
                     <img src="./images/box.png" alt="Caja de promo">
                 </figure>
-                <p>premium plan</p>
-                <ol>
-                    <li>unlimited bandwitch</li>
-                    <li>encrypted connection</li>
-                    <li>yes traffics log</li>
-                    <li>works on all devices</li>
-                    <li>connect anyware</li>
-                    <li>get new features</li>
+                <p class="promo-option__p">premium plan</p>
+                <ol class="promo-option__ol">
+                    <li class="promo-option__li">unlimited bandwitch</li>
+                    <li class="promo-option__li">encrypted connection</li>
+                    <li class="promo-option__li">no traffics log</li>
+                    <li class="promo-option__li">works on all devices</li>
+                    <li class="promo-option__li">Connect Anywhere</li>
+                    <li class="promo-option__li">get new features</li>
                 </ol>
-                <p class="price">$12 /mo </p>
-                <a href="#"><span>Select</span></a>
+                <p class="promo-option__p-price">$12<small class="promo-option__small">/ mo</small></p>
+                <a class="promo-option__a" href="#"><span>Select</span></a>
             </div>
+
         </div>
     </section>
+
     <section class="world">
-        <h3>Huge Global Network <br>
+        <h3 class="world__h3">Huge Global Network <br>
             of Fast VPN</h3>
-        <p>See <strong>LaslesVPN</strong>everywhere to make it easier for you when you move<br>location.</p>
-        <figure>
+        <p class="world__p">See <strong>LaslesVPN</strong> everywhere to make it easier for you when you
+            move<br>location.</p>
+        <figure class="world__figure">
             <img src="./images/global.png" alt="Mapa mundial">
         </figure>
     </section>
     <section class="customer">
-        <h3 class="h3">Trusted by Thousends of <br>Happy Customers</h3>
-        <p>These are the stories of our customers who have joined to us with great <br>pleasure when using this crazy
+        <h3 class="customer__h3">Trusted by Thousends of <br>Happy Customers</h3>
+        <p class="customer__p">These are the stories of our customers who have joined to us with great <br>pleasure when
+            using this crazy
             feature.</p>
-        <div class="square-container">
-            <div class="customer-square">
-                <div class="part-A">
-                    <img src="./images/avatar.png" alt="Avatar">
-                    <p><strong>Viezh Robert</strong><br>SawWar, Poland</p>
-                    <p class="opinion">4.5 ⭐</p>
+        <div class="customer-container">
+            <div class="customer-container-information">
+                <div class="customer-container-information-top">
+                    <img class="customer-container-information-top__img" src="./images/avatar.png" alt="Avatar">
+                    <p class="customer-container-information-top__p"><strong>Viezh Robert</strong><br>SawWar, Poland</p>
+                    <p class="customer-container-information-top__p-opinion">4.5 ⭐</p>
                 </div>
-                <div class="part-B">
-                    <p>“Wow... I am very happy to use this VPN, it<br> turned out to be more than my expectations and so
+                <div class="customer-container-information-bottom">
+                    <p class="customer-container-information-bottom__p">“Wow... I am very happy to use this VPN, it<br>
+                        turned out to be more than my expectations and so
                         far there have been no problems. LaslesVPN always the best”.</p>
                 </div>
             </div>
 
-            <div class="customer-square1">
-                <div class="part-A">
-                    <img src="./images/avatar.png" alt="Avatar">
-                    <p><strong>Yessica Christy</strong><br>Shanxi, China</p>
-                    <p class="opinion">4.5 ⭐</p>
+            <div class="customer-container-information">
+                <div class="customer-container-information-top">
+                    <img class="customer-container-information-top__img" src="./images/avatar.png" alt="Avatar">
+                    <p class="customer-container-information-top__p"><strong>Yessica Christy</strong><br>Shanxi, China
+                    </p>
+                    <p class="customer-container-information-top__p-opinion">4.5 ⭐</p>
                 </div>
-                <div class="part-B">
-                    <p>“I like it because I like to travel far and still can connect with high speed.”.</p>
-                </div>
-            </div>
-
-            <div class="customer-square1">
-                <div class="part-A">
-                    <img src="./images/avatar.png" alt="Avatar">
-                    <p><strong>Kim Young Jou</strong><br>Seoul, South Korea</p>
-                    <p class="opinion">4.5 ⭐</p>
-                </div>
-                <div class="part-B">
-                    <p>“This is very unusual for my business that currently requires a virtual private network that has
-                        high security.”.</p>
+                <div class="customer-container-information-bottom">
+                    <p class="customer-container-information-bottom__p">“I like it because I like to travel far and
+                        still can connect with high speed.”.</p>
                 </div>
             </div>
 
+            <div class="customer-container-information">
+                <div class="customer-container-information-top">
+                    <img class="customer-container-information-top__img" src="./images/avatar.png" alt="Avatar">
+                    <p class="customer-container-information-top__p"><strong>Kim Young Joun</strong><br>Seoul, South
+                        Korea</p>
+                    <p class="customer-container-information-top__p-opinion">4.5 ⭐</p>
+                </div>
+                <div class="customer-container-information-bottom">
+                    <p class="customer-container-information-bottom__p">“This is very unusual for my business that
+                        currently requires a virtual private network that has high security.”.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="suscribe-square">
-            <p class="suscribe-square-script"><strong>Suscribe now for <br>
+
+        <div class="customer-suscribe">
+            <p class="customer-suscribe__p"><strong>Suscribe now for <br>
                     Get Special Features!</strong><br>
                 <small>Let´s suscribe with us and find the fun.</small></p>
 
-            <a class="suscribe-square-boton" href="#"><span>Suscribe Now</span></a>
+
+            <a class="customer-suscribe__a" href="#"><span>Suscribe Now</span></a>
 
         </div>
     </section>
+
     <footer class="footer">
         <div class="footer-information">
             <img class="footer-information__img" src="./images/logo.png" alt="Logo">
@@ -223,19 +245,20 @@
 
         <div class="footer-product">
             <strong class="footer-product__strong">Product</strong>
-            <ol class="footer-product__ol">
+            <!-- TODO: Cambiar ol por ul -->
+            <ul class="footer-product__ul">
                 <li class="footer-product__li">download</li>
                 <li class="footer-product__li">pricing</li>
                 <li class="footer-product__li">location</li>
                 <li class="footer-product__li">servers</li>
                 <li class="footer-product__li">countries</li>
                 <li class="footer-product__li">blog</li>
-            </ol>
+            </ul>
         </div>
 
         <div class="footer-product">
             <strong class="footer-product__strong">Engage</strong>
-            <ol class="footer-product__ol">
+            <ul class="footer-product__ul">
                 <li class="footer-product__li">laslesVPN ?</li>
                 <li class="footer-product__li">FAQ</li>
                 <li class="footer-product__li">tutorials</li>
@@ -243,18 +266,37 @@
                 <li class="footer-product__li">countries</li>
                 <li class="footer-product__li">Privacy Policy</li>
                 <li class="footer-product__li">terms of service</li>
-            </ol>
+            </ul>
         </div>
 
         <div class="footer-product">
             <strong class="footer-product__strong">Earn Money</strong>
-            <ol class="footer-product__ol">
+            <ul class="footer-product__ul">
                 <li class="footer-product__li">affilliate</li>
                 <li class="footer-product__li">become partner</li>
-            </ol>
+            </ul>
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        AOS.init();
+
+        // var options = {
+        // strings: ['Hello', 'Alejandro', "Diego", "Jonathan"],
+        // startDelay: 1300,
+        //     typeSpeed: 80,
+        //     backSpeed: 40,
+        //     backDelay: 2000,
+        //     loop: true,
+        //     smartBackspace: true
+        // };
+
+        // const titleChanging = document.getElementById("titleChanging")
+
+        // var typed = new Typed(titleChanging, options);
+    </script>
 </body>
 
 </html>
